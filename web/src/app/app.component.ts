@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web';
+  name = "Juhász Roland";
+  class = "Szoft II N";
+  date = "2023-04-20";
 }
