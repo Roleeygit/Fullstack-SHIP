@@ -1,3 +1,13 @@
+/*
+* File: api.service.ts
+* Author: Juhász Roland
+* Copyright: 2023, Juhász Roland
+* Group: Szoft II N
+* Date: 2023-04-20
+* Github: https://github.com/Roleeygit/
+* Licenc: GNU GPL
+*/
+
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -6,8 +16,13 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService 
 {
-  url = "http:localhost:8000/api/ships";
+  url = "http://localhost:8000/ships";
   constructor(private http: HttpClient) {}
+
+  getShips()
+  {
+    return this.http.get<any>(this.url);
+  }
 
   addShip(ship: any)
   {

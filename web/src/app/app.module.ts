@@ -1,3 +1,13 @@
+/*
+* File: app.module.ts
+* Author: Juhász Roland
+* Copyright: 2023, Juhász Roland
+* Group: Szoft II N
+* Date: 2023-04-20
+* Github: https://github.com/Roleeygit/
+* Licenc: GNU GPL
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
